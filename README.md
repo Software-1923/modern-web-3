@@ -29,7 +29,6 @@ Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Tem
 
 ### 5) "4" is the javascript code I mentioned;
 
-```
 <script>
     var currentUrl = window.location.href;
 
@@ -38,24 +37,19 @@ Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Tem
         window.history.replaceState({}, document.title, newUrl); 
     }
 </script>
-```
 
 ### 6) The Main Database "data.js" file actually loads "index.html" at the beginning, index.html redirects to the "home.html" page.
 
 ### 7) Finally, if you want to update the error page, the first step is that you cannot use an external font, you have to choose the default fonts, secondly, you have to give the design codes in the "<style></style>" codes in the html, otherwise this happens: 
-```
 "<link rel="stylesheet" type="text/css" href="styles.css" />"
-```
 the code will not work.
 
-```
 Original Developer Link: 
 https://replit.com/@BerkayCINAR1/Template-React-Vite
 
 GitHub Link: https://github.com/Software-1923/modern-template/
 
 Example Netlify Site: https://modern-template-vite.netlify.app/
-```
 
 ## Note: The "data.js" server is run automatically thanks to the package.json file. The license method is the MIT license.
 

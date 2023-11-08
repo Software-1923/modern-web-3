@@ -1,0 +1,127 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <style>
+    :root {
+      --background: #1c1c1c;
+      --base: #35c125;
+      --accent: #0bf912;
+      --shadow: #089d22;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--background);
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .cool {
+      font: bold 3rem/1.2 sans-serif;
+      max-width: 20rem;
+      display: inline-block;
+    }
+
+    .cool span {
+      color: var(--shadow);
+      display: inline-block;
+      position: relative;
+      color: #089d22;
+    }
+
+    .cool span:nth-child(1)::before, .cool span:nth-child(1)::after {
+      -webkit-animation-delay: 0.1s;
+      animation-delay: 0.1s;
+    }
+
+    .cool span:nth-child(2)::before, .cool span:nth-child(2)::after {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+    }
+
+    @media (prefers-reduced-motion) {
+      .cool span {
+        color: var(--base);
+      }
+    }
+
+    .terminal::before {
+        content: "\2022 \2022 \2022";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 4px;
+        background: rgb(58, 58, 58);
+        color: #03f72487;
+        width: 100%;
+        font-size: 2rem;
+        line-height: 0;
+        padding: 14px 0;
+        text-indent: 4px;
+    }
+
+    h1 {
+        font-family: monospace;
+        color: #00af78e6;
+    }
+
+    ::selection {
+      background-color: #00af78e6;
+      color: #3b3b3b;;
+    }
+
+    /* Web-Kit Scroll-Bar */
+
+    ::-webkit-scrollbar {
+        height: 10px;
+        width: 10px;
+        background-color: #1c1c1c;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-clip: padding-box;
+        background-color: #00a97f;
+        border: 2px solid transparent;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+            background-color: transparent;
+         }
+
+         body {
+             scrollbar-width: thin;
+             scrollbar-color: rgba(33, 33, 33, 100) transparent;
+         }
+  </style>
+<style data-emotion="css-global" data-s=""></style></head>
+  <script>
+    var currentUrl = window.location.href;
+
+    if (currentUrl.endsWith('.html')) {
+        var newUrl = currentUrl.slice(0, -5); 
+        window.history.replaceState({}, document.title, newUrl); 
+    }
+  </script>
+<body>
+  <div class="terminal" [ngswitch]="selection.value">
+      <h1 *ngswitchdefault="">Home</h1>
+  </div>
+<div id="otherside-root" style="z-index: 2147483647; position: relative;">
+
+  <div id="hyper-main-container"><div id="hyper-menu-shadow-root" style="all: initial;"></div>
+<div id="assistant-shadow-root" style="all: initial;"></div>
+</div></div>
+  
+</body></html>
